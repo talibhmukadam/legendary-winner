@@ -22,8 +22,8 @@ with SB(uc=True, test=True, locale="en") as sb:
     # sb.cdp.find_element('[data-ui="apply-button"]', best_match=False, timeout=10).mouse_click()
     sb.sleep(3)
     sb.cdp.save_screenshot('abc4.png', folder=None, selector=None)
-    # sb.sleep(10)
-    # sb.uc_gui_handle_cf()
+    sb.sleep(5)
+    sb.uc_gui_click_captcha()
     # try:
     #     sb.uc_gui_handle_cf()
     #     # sb.cdp.find_element('[id^="turnstile-container-"] div', best_match=False, timeout=5).mouse_click()
