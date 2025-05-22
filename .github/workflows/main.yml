@@ -70,4 +70,4 @@ jobs:
         # cp resume.pdf /app/resume.pdf
     - name: Run seleniumbase script
       run: |
-        python script.py --headless
+        python script.py --headed
