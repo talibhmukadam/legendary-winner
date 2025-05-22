@@ -70,7 +70,7 @@ jobs:
         # cp resume.pdf /app/resume.pdf
     - name: Run seleniumbase script
       run: |
-        python script.py --headed
+        python script.py --headed --proxy=e0af20643b6fe7cb3530:da23d666a6336983@gw.dataimpulse.com:823
 
     - name: Upload screenshots as artifacts
       if: always()  # Upload screenshots even if the script fails
