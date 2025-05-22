@@ -23,7 +23,11 @@ with SB(uc=True, test=True, locale="en") as sb:
     sb.sleep(3)
     sb.cdp.save_screenshot('abc4.png', folder=None, selector=None)
     sb.sleep(5)
-    sb.uc_gui_click_captcha()
+    sb.uc_gui_handle_cf()
+    sb.sleep(5)
+    sb.uc_gui_handle_cf()
+    sb.sleep(5)
+    sb.uc_gui_handle_cf()
     # try:
     #     sb.uc_gui_handle_cf()
     #     # sb.cdp.find_element('[id^="turnstile-container-"] div', best_match=False, timeout=5).mouse_click()
