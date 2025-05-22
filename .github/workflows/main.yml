@@ -68,3 +68,6 @@ jobs:
         # Copy it to the location expected by the script
         sudo cp resume.pdf $HOME/app/resume.pdf
         # cp resume.pdf /app/resume.pdf
+    - name: Run seleniumbase script
+      run: |
+        python script.py --headless
