@@ -2,7 +2,7 @@ name: CI Build 1 (macOS)
 
 on:
   schedule:
-    - cron: "14 * * * *"
+    - cron: "0 0 * * *"
   push:
     branches: [ master ]
   pull_request:
